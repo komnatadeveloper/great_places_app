@@ -1,4 +1,6 @@
 import '../environment_variables.dart';
+import 'dart:convert' as dartConvert;
+import 'package:http/http.dart' as http;
 
 class LocationHelper {
   static generateLocationPreviewImage( {
@@ -10,4 +12,15 @@ class LocationHelper {
 
 
   }
+
+
+  static Future<String> getPlaceAddress (double lat, double lon) async {
+    final url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lon&key=$GOOGLE_API_KEY';
+    final res = await http.get(url);
+    return dartConvert.json.decode(
+      res.body
+    )['results'][0]['formatted_address'];
+  }
+
+
 }

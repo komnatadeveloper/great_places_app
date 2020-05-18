@@ -39,3 +39,4 @@ lib/generated_plugin_registrant.dart
 # Environment variables
 lib/environment_variables.dart
 android/app/src/main/AndroidManifest.xml
+ios/Runner/AppDelegate.swift

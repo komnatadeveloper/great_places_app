@@ -20,6 +20,8 @@
 	<string>Need to get your location!!</string>
 	<key>CFBundleName</key>
 	<string>great_places_app</string>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>	
 	<key>CFBundleName</key>
 	<string>great_places_app</string>
 	<key>CFBundleName</key>

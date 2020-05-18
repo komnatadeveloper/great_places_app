@@ -17,7 +17,7 @@ class DBHelper {
         version 
         ) {        
         return db.execute(
-          'CREATE TABLE user_places ( id TEXT PRIMARY KEY, title TEXT, imagePath TEXT );'
+          'CREATE TABLE user_places ( id TEXT PRIMARY KEY, title TEXT, imagePath TEXT, locationLatitude REAL, locationLongitude REAL, address TEXT );'
         );
       },
       version: 1
